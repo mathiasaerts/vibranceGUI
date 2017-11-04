@@ -120,7 +120,7 @@ namespace vibrance.GUI.NVIDIA
         public const int NvapiMaxLevel = 63;
         public const int NvapiDefaultLevel = 0;
 
-        public const string NvapiErrorInitFailed = "VibranceProxy failed to initialize! Press Ok to open the vibranceGUI Steam Guide in your browser. " +
+        public const string ErrorInitFailed = "NVIDIA VibranceProxy failed to initialize! Press Ok to open the vibranceGUI Steam Guide in your browser. " +
             "Scroll down to section \"Troubleshooting, Errors, Q&A\".";
         public const string NvapiErrorSystypeUnsupported = "VibranceProxy detected that you are running a Laptop with integrated NVIDIA card. " +
             "NVIDIA Laptops are not supported because their NVIDIA drivers do not contain Digital Vibrance! " +
@@ -155,7 +155,7 @@ namespace vibrance.GUI.NVIDIA
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                DialogResult result = MessageBox.Show(NvidiaDynamicVibranceProxy.NvapiErrorInitFailed, "vibranceGUI Error", 
+                DialogResult result = MessageBox.Show(NvidiaDynamicVibranceProxy.ErrorInitFailed, "vibranceGUI Error", 
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (result == DialogResult.OK)
                 {

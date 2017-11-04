@@ -20,6 +20,10 @@ namespace vibrance.GUI.AMD
         private WinEventHook _hook;
         private static Screen _gameScreen;
 
+        public const string ErrorInitFailed = "AMD VibranceProxy failed to initialize! Press Ok to open the vibranceGUI Steam Guide in your browser. " +
+            "Scroll down to section \"Troubleshooting, Errors, Q&A\".";
+        public const string GuideLink = "https://vibrancegui.com/vibrance/guide";
+
         public AmdDynamicVibranceProxy(IAmdAdapter amdAdapter, List<ApplicationSetting> applicationSettings, Dictionary<string, Tuple<ResolutionModeWrapper, List<ResolutionModeWrapper>>> windowsResolutionSettings)
         {
             _amdAdapter = amdAdapter;
@@ -45,11 +49,11 @@ namespace vibrance.GUI.AMD
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                DialogResult result = MessageBox.Show(NvidiaDynamicVibranceProxy.NvapiErrorInitFailed, "vibranceGUI Error",
+                DialogResult result = MessageBox.Show(AmdDynamicVibranceProxy.ErrorInitFailed, "vibranceGUI Error",
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (result == DialogResult.OK)
                 {
-                    Process.Start(NvidiaDynamicVibranceProxy.GuideLink);
+                    Process.Start(AmdDynamicVibranceProxy.GuideLink);
                 }
             }
         }
