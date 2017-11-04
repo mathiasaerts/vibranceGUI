@@ -58,17 +58,18 @@
             // 
             // trackBarIngameLevel
             // 
-            this.trackBarIngameLevel.Location = new System.Drawing.Point(16, 23);
+            this.trackBarIngameLevel.Location = new System.Drawing.Point(7, 23);
             this.trackBarIngameLevel.Maximum = 63;
             this.trackBarIngameLevel.Name = "trackBarIngameLevel";
-            this.trackBarIngameLevel.Size = new System.Drawing.Size(131, 45);
+            this.trackBarIngameLevel.Size = new System.Drawing.Size(200, 45);
             this.trackBarIngameLevel.TabIndex = 9;
             this.trackBarIngameLevel.Scroll += new System.EventHandler(this.trackBarIngameLevel_Scroll);
             // 
             // labelIngameLevel
             // 
+            this.labelIngameLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelIngameLevel.AutoSize = true;
-            this.labelIngameLevel.Location = new System.Drawing.Point(149, 26);
+            this.labelIngameLevel.Location = new System.Drawing.Point(208, 23);
             this.labelIngameLevel.Name = "labelIngameLevel";
             this.labelIngameLevel.Size = new System.Drawing.Size(27, 13);
             this.labelIngameLevel.TabIndex = 10;

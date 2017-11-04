@@ -37,10 +37,13 @@
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.checkBoxAutostart = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxPrimaryMonitorOnly = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelWindowsLevel = new System.Windows.Forms.Label();
             this.trackBarWindowsLevel = new System.Windows.Forms.TrackBar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.checkBoxPrimaryMonitorOnly = new System.Windows.Forms.CheckBox();
             this.statusLabel = new System.Windows.Forms.Label();
             this.observerStatusLabel = new System.Windows.Forms.Label();
             this.labelTwitter = new System.Windows.Forms.Label();
@@ -51,15 +54,27 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.buttonSteam = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonProcessExplorer = new System.Windows.Forms.Button();
+            this.buttonAddProgram = new System.Windows.Forms.Button();
             this.buttonRemoveProgram = new System.Windows.Forms.Button();
             this.listApplications = new System.Windows.Forms.ListView();
-            this.buttonAddProgram = new System.Windows.Forms.Button();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.contextMenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWindowsLevel)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon
@@ -109,7 +124,7 @@
             // checkBoxAutostart
             // 
             this.checkBoxAutostart.AutoSize = true;
-            this.checkBoxAutostart.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAutostart.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAutostart.Name = "checkBoxAutostart";
             this.checkBoxAutostart.Size = new System.Drawing.Size(131, 17);
             this.checkBoxAutostart.TabIndex = 8;
@@ -119,20 +134,109 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxPrimaryMonitorOnly);
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.checkBoxAutostart);
-            this.groupBox1.Location = new System.Drawing.Point(13, 82);
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.groupBox1, 2);
+            this.groupBox1.Controls.Add(this.tableLayoutPanel3);
+            this.groupBox1.Location = new System.Drawing.Point(3, 103);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(397, 143);
+            this.groupBox1.Size = new System.Drawing.Size(418, 84);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(7, 19);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(405, 54);
+            this.tableLayoutPanel3.TabIndex = 20;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.Controls.Add(this.labelWindowsLevel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.trackBarWindowsLevel, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(205, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66667F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(197, 48);
+            this.tableLayoutPanel1.TabIndex = 20;
+            // 
+            // labelWindowsLevel
+            // 
+            this.labelWindowsLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelWindowsLevel.AutoSize = true;
+            this.labelWindowsLevel.Location = new System.Drawing.Point(170, 15);
+            this.labelWindowsLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.labelWindowsLevel.Name = "labelWindowsLevel";
+            this.labelWindowsLevel.Size = new System.Drawing.Size(27, 13);
+            this.labelWindowsLevel.TabIndex = 1;
+            this.labelWindowsLevel.Text = "50%";
+            // 
+            // trackBarWindowsLevel
+            // 
+            this.trackBarWindowsLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBarWindowsLevel.Location = new System.Drawing.Point(0, 15);
+            this.trackBarWindowsLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.trackBarWindowsLevel.Maximum = 63;
+            this.trackBarWindowsLevel.Name = "trackBarWindowsLevel";
+            this.trackBarWindowsLevel.Size = new System.Drawing.Size(162, 33);
+            this.trackBarWindowsLevel.TabIndex = 0;
+            this.trackBarWindowsLevel.Scroll += new System.EventHandler(this.trackBarWindowsLevel_Scroll);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Windows Vibrance Level";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.checkBoxPrimaryMonitorOnly, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.checkBoxAutostart, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(196, 48);
+            this.tableLayoutPanel2.TabIndex = 21;
+            // 
             // checkBoxPrimaryMonitorOnly
             // 
             this.checkBoxPrimaryMonitorOnly.AutoSize = true;
-            this.checkBoxPrimaryMonitorOnly.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxPrimaryMonitorOnly.Location = new System.Drawing.Point(3, 27);
             this.checkBoxPrimaryMonitorOnly.Name = "checkBoxPrimaryMonitorOnly";
             this.checkBoxPrimaryMonitorOnly.Size = new System.Drawing.Size(151, 17);
             this.checkBoxPrimaryMonitorOnly.TabIndex = 15;
@@ -142,56 +246,20 @@
             this.checkBoxPrimaryMonitorOnly.UseVisualStyleBackColor = true;
             this.checkBoxPrimaryMonitorOnly.CheckedChanged += new System.EventHandler(this.checkBoxPrimaryMonitorOnly_CheckedChanged);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.labelWindowsLevel);
-            this.groupBox3.Controls.Add(this.trackBarWindowsLevel);
-            this.groupBox3.Location = new System.Drawing.Point(7, 65);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(182, 72);
-            this.groupBox3.TabIndex = 12;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Windows Vibrance Level";
-            // 
-            // labelWindowsLevel
-            // 
-            this.labelWindowsLevel.AutoSize = true;
-            this.labelWindowsLevel.Location = new System.Drawing.Point(148, 22);
-            this.labelWindowsLevel.Name = "labelWindowsLevel";
-            this.labelWindowsLevel.Size = new System.Drawing.Size(0, 13);
-            this.labelWindowsLevel.TabIndex = 1;
-            // 
-            // trackBarWindowsLevel
-            // 
-            this.trackBarWindowsLevel.Location = new System.Drawing.Point(15, 22);
-            this.trackBarWindowsLevel.Maximum = 63;
-            this.trackBarWindowsLevel.Name = "trackBarWindowsLevel";
-            this.trackBarWindowsLevel.Size = new System.Drawing.Size(131, 45);
-            this.trackBarWindowsLevel.TabIndex = 0;
-            this.trackBarWindowsLevel.Scroll += new System.EventHandler(this.trackBarWindowsLevel_Scroll);
-            // 
             // statusLabel
             // 
+            this.statusLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(106, 502);
+            this.statusLabel.Location = new System.Drawing.Point(96, 10);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(61, 13);
             this.statusLabel.TabIndex = 14;
             this.statusLabel.Text = "Initializing...";
             // 
-            // observerStatusLabel
-            // 
-            this.observerStatusLabel.AutoSize = true;
-            this.observerStatusLabel.Location = new System.Drawing.Point(12, 502);
-            this.observerStatusLabel.Name = "observerStatusLabel";
-            this.observerStatusLabel.Size = new System.Drawing.Size(87, 13);
-            this.observerStatusLabel.TabIndex = 13;
-            this.observerStatusLabel.Text = "Observer status: ";
-            // 
             // labelTwitter
             // 
             this.labelTwitter.AutoSize = true;
-            this.labelTwitter.Location = new System.Drawing.Point(10, 11);
+            this.labelTwitter.Location = new System.Drawing.Point(3, 0);
             this.labelTwitter.Name = "labelTwitter";
             this.labelTwitter.Size = new System.Drawing.Size(192, 13);
             this.labelTwitter.TabIndex = 11;
@@ -200,7 +268,8 @@
             // linkLabelTwitter
             // 
             this.linkLabelTwitter.AutoSize = true;
-            this.linkLabelTwitter.Location = new System.Drawing.Point(208, 11);
+            this.linkLabelTwitter.Location = new System.Drawing.Point(212, 0);
+            this.linkLabelTwitter.Margin = new System.Windows.Forms.Padding(0);
             this.linkLabelTwitter.Name = "linkLabelTwitter";
             this.linkLabelTwitter.Size = new System.Drawing.Size(132, 13);
             this.linkLabelTwitter.TabIndex = 10;
@@ -215,12 +284,13 @@
             // 
             // buttonPaypal
             // 
-            this.buttonPaypal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonPaypal.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPaypal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonPaypal.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaypal.Image")));
-            this.buttonPaypal.Location = new System.Drawing.Point(211, 28);
+            this.buttonPaypal.Location = new System.Drawing.Point(0, 0);
+            this.buttonPaypal.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPaypal.Name = "buttonPaypal";
-            this.buttonPaypal.Size = new System.Drawing.Size(90, 55);
+            this.buttonPaypal.Size = new System.Drawing.Size(106, 70);
             this.buttonPaypal.TabIndex = 16;
             this.toolTip.SetToolTip(this.buttonPaypal, "Click here to donate to vibranceGUI through Paypal");
             this.buttonPaypal.UseVisualStyleBackColor = false;
@@ -228,8 +298,9 @@
             // 
             // labelPaypal
             // 
+            this.labelPaypal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelPaypal.AutoSize = true;
-            this.labelPaypal.Location = new System.Drawing.Point(10, 48);
+            this.labelPaypal.Location = new System.Drawing.Point(3, 58);
             this.labelPaypal.Name = "labelPaypal";
             this.labelPaypal.Size = new System.Drawing.Size(183, 13);
             this.labelPaypal.TabIndex = 17;
@@ -244,13 +315,14 @@
             // 
             // buttonSteam
             // 
-            this.buttonSteam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSteam.BackColor = System.Drawing.Color.Transparent;
             this.buttonSteam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSteam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSteam.Image = ((System.Drawing.Image)(resources.GetObject("buttonSteam.Image")));
-            this.buttonSteam.Location = new System.Drawing.Point(307, 27);
+            this.buttonSteam.Location = new System.Drawing.Point(106, 0);
+            this.buttonSteam.Margin = new System.Windows.Forms.Padding(0);
             this.buttonSteam.Name = "buttonSteam";
-            this.buttonSteam.Size = new System.Drawing.Size(90, 55);
+            this.buttonSteam.Size = new System.Drawing.Size(106, 70);
             this.buttonSteam.TabIndex = 19;
             this.toolTip.SetToolTip(this.buttonSteam, "Click here to donate to vibranceGUI through Steam");
             this.buttonSteam.UseVisualStyleBackColor = false;
@@ -258,20 +330,53 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.buttonProcessExplorer);
-            this.groupBox5.Controls.Add(this.buttonRemoveProgram);
-            this.groupBox5.Controls.Add(this.listApplications);
-            this.groupBox5.Controls.Add(this.buttonAddProgram);
-            this.groupBox5.Location = new System.Drawing.Point(13, 231);
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.groupBox5, 2);
+            this.groupBox5.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox5.Location = new System.Drawing.Point(3, 193);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(397, 227);
+            this.groupBox5.Size = new System.Drawing.Size(418, 272);
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Program Settings";
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.listApplications, 0, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(409, 247);
+            this.tableLayoutPanel4.TabIndex = 20;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Controls.Add(this.buttonProcessExplorer);
+            this.flowLayoutPanel1.Controls.Add(this.buttonAddProgram);
+            this.flowLayoutPanel1.Controls.Add(this.buttonRemoveProgram);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(409, 32);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
             // buttonProcessExplorer
             // 
-            this.buttonProcessExplorer.Location = new System.Drawing.Point(7, 20);
+            this.buttonProcessExplorer.Location = new System.Drawing.Point(3, 3);
             this.buttonProcessExplorer.Name = "buttonProcessExplorer";
             this.buttonProcessExplorer.Size = new System.Drawing.Size(75, 23);
             this.buttonProcessExplorer.TabIndex = 3;
@@ -279,9 +384,19 @@
             this.buttonProcessExplorer.UseVisualStyleBackColor = true;
             this.buttonProcessExplorer.Click += new System.EventHandler(this.buttonProcessExplorer_Click);
             // 
+            // buttonAddProgram
+            // 
+            this.buttonAddProgram.Location = new System.Drawing.Point(84, 3);
+            this.buttonAddProgram.Name = "buttonAddProgram";
+            this.buttonAddProgram.Size = new System.Drawing.Size(92, 23);
+            this.buttonAddProgram.TabIndex = 0;
+            this.buttonAddProgram.Text = "Add manually";
+            this.buttonAddProgram.UseVisualStyleBackColor = true;
+            this.buttonAddProgram.Click += new System.EventHandler(this.buttonAddProgram_Click);
+            // 
             // buttonRemoveProgram
             // 
-            this.buttonRemoveProgram.Location = new System.Drawing.Point(186, 20);
+            this.buttonRemoveProgram.Location = new System.Drawing.Point(182, 3);
             this.buttonRemoveProgram.Name = "buttonRemoveProgram";
             this.buttonRemoveProgram.Size = new System.Drawing.Size(75, 23);
             this.buttonRemoveProgram.TabIndex = 2;
@@ -291,39 +406,95 @@
             // 
             // listApplications
             // 
-            this.listApplications.Location = new System.Drawing.Point(7, 49);
+            this.listApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listApplications.Location = new System.Drawing.Point(3, 35);
             this.listApplications.Name = "listApplications";
-            this.listApplications.Size = new System.Drawing.Size(384, 172);
+            this.listApplications.Size = new System.Drawing.Size(403, 209);
             this.listApplications.TabIndex = 1;
             this.listApplications.UseCompatibleStateImageBehavior = false;
             this.listApplications.DoubleClick += new System.EventHandler(this.listApplications_DoubleClick);
             // 
-            // buttonAddProgram
+            // tableLayoutPanel5
             // 
-            this.buttonAddProgram.Location = new System.Drawing.Point(88, 20);
-            this.buttonAddProgram.Name = "buttonAddProgram";
-            this.buttonAddProgram.Size = new System.Drawing.Size(92, 23);
-            this.buttonAddProgram.TabIndex = 0;
-            this.buttonAddProgram.Text = "Add manually";
-            this.buttonAddProgram.UseVisualStyleBackColor = true;
-            this.buttonAddProgram.Click += new System.EventHandler(this.buttonAddProgram_Click);
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel3, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.labelTwitter, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.linkLabelTwitter, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.labelPaypal, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox1, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox5, 0, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 5;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(424, 502);
+            this.tableLayoutPanel5.TabIndex = 20;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.flowLayoutPanel3, 2);
+            this.flowLayoutPanel3.Controls.Add(this.observerStatusLabel);
+            this.flowLayoutPanel3.Controls.Add(this.statusLabel);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 468);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(424, 34);
+            this.flowLayoutPanel3.TabIndex = 21;
+            // 
+            // observerStatusLabel
+            // 
+            this.observerStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.observerStatusLabel.AutoSize = true;
+            this.observerStatusLabel.Location = new System.Drawing.Point(3, 10);
+            this.observerStatusLabel.Name = "observerStatusLabel";
+            this.observerStatusLabel.Size = new System.Drawing.Size(87, 13);
+            this.observerStatusLabel.TabIndex = 14;
+            this.observerStatusLabel.Text = "Observer status: ";
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.buttonSteam, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.buttonPaypal, 0, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(212, 30);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(212, 70);
+            this.tableLayoutPanel6.TabIndex = 21;
             // 
             // VibranceGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 524);
-            this.Controls.Add(this.buttonSteam);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.labelPaypal);
-            this.Controls.Add(this.buttonPaypal);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.statusLabel);
-            this.Controls.Add(this.observerStatusLabel);
-            this.Controls.Add(this.labelTwitter);
-            this.Controls.Add(this.linkLabelTwitter);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ClientSize = new System.Drawing.Size(438, 514);
+            this.Controls.Add(this.tableLayoutPanel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(454, 553);
             this.Name = "VibranceGUI";
             this.Text = "vibranceGUI";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -332,13 +503,21 @@
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.contextMenuStrip.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWindowsLevel)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -351,11 +530,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.CheckBox checkBoxAutostart;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label labelWindowsLevel;
         private System.Windows.Forms.TrackBar trackBarWindowsLevel;
         private System.Windows.Forms.Label statusLabel;
-        private System.Windows.Forms.Label observerStatusLabel;
         private System.Windows.Forms.Label labelTwitter;
         private System.Windows.Forms.LinkLabel linkLabelTwitter;
         private System.ComponentModel.BackgroundWorker settingsBackgroundWorker;
@@ -369,6 +546,16 @@
         private System.Windows.Forms.Button buttonAddProgram;
         private System.Windows.Forms.Button buttonSteam;
         private System.Windows.Forms.Button buttonProcessExplorer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Label observerStatusLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
     }
 }
 
